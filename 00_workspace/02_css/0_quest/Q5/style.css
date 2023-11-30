@@ -1,0 +1,45 @@
+.flex {
+    display: flex;
+}
+
+.flex>aside{
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+.flex>aside:first-child {
+    background-color: red;
+}
+
+.flex>aside:last-child {
+    background-color: orange;
+}
+
+.flex>div{
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.flex>div:first-child {
+    background-color: green;
+}
+
+.flex>div:last-child {
+    background-color: blue;
+}
+
+main{
+    background-color: yellow;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+}
+
+.wrap{
+    width: 500px;
+    height: 400px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Open+Sans:wght@700&display=swap');
+
+        h1 {
+            font-family: 'Open Sans', sans-serif;
+            text-align: right;
+            margin-right: 80px;
+            font-size: 52px;
+            z-index: 2;
+            position: relative;
+        }
+
+        h1>span {
+            font-family: 'Noto Serif', serif;
+        }
+
+        .human {
+            margin-left: 150px;
+            z-index: 3;
+            position: relative;
+        }
+
+        .circle {
+            width: 1350px;
+            height: 830px;
+            border-radius: 20%;
+            background-color: beige;
+            position: absolute;
+            top: -540px;
+            transform: rotate(162deg);
+            left: -44px;
+            z-index: 1;
+        }
+
+        .material-symbols-outlined {
+            font-weight: 900;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .plus-circle {
+            background-color: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            position: absolute;
+            right: 50px;
+            box-shadow: 5px 4px 5px gray;
+            border: 1px solid #ccc;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="./login.html">
+        <div class="home">
+            <h1>Empower <br>your <span>mind</span> <br>virtually</h1>
+            <img src="./Happy Bunch - Desk.png" alt="" class="human">
+            <div class="circle"></div>
+            <div class="plus-circle">
+                <span class="material-symbols-outlined">
+                    add
+                </span>
+            </div>
+
+        </div>
+    </a>
+
+</body>
+
+</html>

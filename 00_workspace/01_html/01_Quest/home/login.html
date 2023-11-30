@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form{
+        position: relative;
+        top: 100px;
+        width: 80%;
+        margin: auto;
+        border: 1px solid #ddd;
+        border-radius: 40px;
+        height: 78vh;
+        padding: 20px 50px;
+    }
+    form>h4{
+        margin:0px;
+    }
+
+    .id{
+        height: 20px;
+    }
+    .pw{
+        height: 20px;
+        margin-bottom: 50px;
+    }
+
+    .astro{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    form .input_form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+        margin: auto;
+    }
+    form .input_form .login_btn{
+        height: 40px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+        background-color: darkslateblue;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <form >
+        <fieldset>
+            <legend>필수정보</legend>
+            <img src="./Happy Bunch - Astronaut.png" alt="" class="astro">
+            <div class="input_form">
+            <h4>ID</h4>
+            <input type="email" class="id">
+            <input type="text">
+            <br>
+            <h4>PASSWORD</h4>
+                <input type="password" class="pw">
+                <button class="login_btn">LOGIN</button>
+            </div>
+
+            <input type="checkbox" checked>고양이
+            <input type="checkbox">개
+            <input type="checkbox">토끼
+
+            <select name="birth_m">
+                <option value="1"></option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+            <input type="radio" name="a" checked>강아지
+            <input type="radio" name="a">고양이
+            <input type="radio" name="a">토끼
+            <input type="button" value="집에 간다">
+        </fieldset>
+    </form>
+</body>
+</html>

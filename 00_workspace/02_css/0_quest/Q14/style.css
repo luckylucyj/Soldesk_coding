@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* a {
+    text-decoration: none;
+} */
+
+ul {
+    list-style: none;
+}
+
+.wrap {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.wrap header {
+    display: flex;
+}
+
+.wrap header .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+}
+
+.wrap header .logo img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.wrap header .logo a{
+    text-decoration: none;
+}
+
+.wrap header .logo h3 {
+    color: brown;
+    font-size: 1.2em
+}
+
+.wrap header .banner {
+    background-color: pink;
+    width: 1200px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap nav {
+    background-color: gray;
+    text-align: center;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap nav>div {
+    background-color: red;
+}
+
+.wrap nav>div a {
+    text-decoration: underline;
+}
+
+.wrap footer {
+    background-color: blue;
+    height: 200px;
+    bottom: 10px;
+    position: fixed;
+    width: inherit;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.wrap main {
+    display: flex;
+    height: 800px;
+}
+
+.wrap main .left {
+    width: 200px;
+    background-color: orange;
+}
+
+.wrap main .left>div {
+    margin: 10px 10px 0 10px;
+    padding: 10px;
+    height: 100px;
+}
+
+.wrap main .left>div>h3 {
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+}
+
+.wrap main .left>div ul li a {
+    text-decoration: underline;
+}
+
+.wrap main .left>div ul a {
+    text-decoration: underline;
+}
+
+.wrap main .left>div>h3>i {
+    color: yellowgreen;
+    text-align: center;
+}
+
+.wrap main .left .block_1 {
+    background-color: green;
+}
+
+.wrap main .left .block_1 ul li form input[type=text] {
+    width: 80px;
+}
+
+.wrap main .left .block_2 {
+    background-color: red;
+}
+
+.wrap main .left .block_3 {
+    background-color: pink;
+}
+
+.wrap main .center {
+    width: 1200px;
+    background-color: yellow;
+}
+
+.wrap main .center img {
+    width: 200px;
+    height: 200px;
+    border: 4px solid chartreuse;
+}
+
+.wrap footer p {
+    font-size: 0.8em;
+    color: gray;
+}
+
+.wrap main aside {
+    width: 200px;
+    background-color: green;
+}
+
+.wrap main aside img {
+    width: 160px;
+}

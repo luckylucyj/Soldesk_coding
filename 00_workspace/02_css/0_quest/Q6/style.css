@@ -1,0 +1,30 @@
+.flex{
+    display: flex;
+}
+
+.flex>header{
+    display: flex;
+}
+
+.left>header>div:first-child{
+    margin-right: 50px;
+    position: relative;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    margin-left: -40px;
+}
+
+.wrap .left header{
+    display: flex;
+}
+
+.wrap{
+    display: flex;
+}
+
+.wrap .left>.flex>div:first-child{
+    margin-right: 50px;
+}

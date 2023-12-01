@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let random1 = Math.floor(Math.random() * 45);
+        let random2 = Math.floor(Math.random() * 45);
+        let random3 = Math.floor(Math.random() * 45);
+        let random4 = Math.floor(Math.random() * 45);
+        let random5 = Math.floor(Math.random() * 45);
+        let random6 = Math.floor(Math.random() * 45);
+
+        // console.log(random1);
+        // console.log(random2);
+        // console.log(random3);
+        // console.log(random4);
+        // console.log(random5);
+
+        let lotto = [random1, random2, random3, random4, random5, random6];
+        console.log(lotto);
+
+        let client1 = Number(prompt('로또 1번째 번호를 입력해주세요'));
+        let client2 = Number(prompt('로또 2번째 번호를 입력해주세요'));
+        let client3 = Number(prompt('로또 3번째 번호를 입력해주세요'));
+        let client4 = Number(prompt('로또 4번째 번호를 입력해주세요'));
+        let client5 = Number(prompt('로또 5번째 번호를 입력해주세요'));
+        let client6 = Number(prompt('로또 6번째 번호를 입력해주세요'));
+
+        let lotto_client = [client1, client2, client3, client4, client5, client6];
+        console.log(lotto_client);
+        //랜덤한 수를 뽑으려면 Math.random을 활용하면 되는데 random
+        //알게된 점
+        // 1. math는 꼭 앞글자를 대문자로 써야 한다.
+        // 2. 0 ~ 원하는 범위를 하고 싶으면 Math.random()*원하는 범위를 Math.floor로 감싸준다. -am 12:19
+
+    </script>
+</body>
+
+</html>

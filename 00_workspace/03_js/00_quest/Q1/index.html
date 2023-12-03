@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="area"></div>
+    <button id="btn">눌러</button>
+    <button class="button" onclick="fun()"></button>
+    <script>
+      var count = 1;
+      const div = document.querySelector("#area");
+      div.innerText = "hi there";
+      
+      var btn = document.querySelector("#btn");
+      // console.log(btn);
+      btn.addEventListener("click", function() {
+        const newDiv = document.createElement("div");
+        newDiv.style.backgroundColor = "pink";
+        newDiv.style.width = "200px";
+        newDiv.style.height= '200px';
+        div.appendChild(newDiv);
+      });
+
+      function fun(){
+        const button=document.createElement('button');
+        button.innerText='Click ME';
+        document.body.appendChild(button);
+      }
+
+      // for(let i=0; i<6; i++){
+      //   document.write('고양이<hr>')
+      // }
+
+      // for(let j=0; j<6; j++){
+      //   document.write('<img src="cat.jpg">');
+      // }
+    </script>
+  </body>
+</html>

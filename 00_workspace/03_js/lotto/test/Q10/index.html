@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div></div>
+  <script>
+   //컴퓨터 가위바위보
+   //사용자 가위바위보
+
+   var computer=['가위', '바위','보'];
+   var client=['바위', '보','가위'];
+
+  //  setInterval(()=>{
+  //   for(let i=0; i<computer.length; i++){
+  //     document.write(computer[i]);
+  //   }
+  //  },5);
+
+let count=1;
+const timer=setInterval(()=>{
+  document.write(count);
+  if(count++===3) clearInterval(timer);
+}, 1000);
+
+let count1=1;
+const timer1=setInterval(()=>{
+  document.write(count1);
+  if(count1++===3) clearInterval(timer1);
+},1000)
+
+let count2=1;
+const timer2=setInterval(()=>{
+  document.write(computer);
+  if(count2++===3) clearInterval(timer2);
+})
+
+function addElement(){
+  const newDiv=document.createElement('div');
+
+  const div=document.querySelector('div');
+  
+  div.innerText='hi there';
+  div.appendChild(newDiv);
+}
+
+addElement();
+document.write(div);
+
+
+for(var n=1; n<=10; n=n+1){
+    for(var m=1; m<=10; m=m+1){
+        document.write("*");
+    }
+    document.write("<br>");
+}
+
+  </script>
+</body>
+</html>

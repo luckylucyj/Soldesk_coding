@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // for(let k=1; k<11;k ++){
+        //     for(let i=1; i<=k; i++){
+        //         for(let j=10; j>=k; j--){
+        //             document.write('*');
+        //         }
+        //         document.write('&nbsp');
+        //     }
+        //     document.write('<br>');
+        // }
+
+
+        // for (var i = 1; i <= 10; i = i + 1) {
+
+        //     for (var k = 1; k <= i - 1; k = k + 1) {
+        //         document.write("&nbsp;")
+        //     }
+
+        //     for (var j = 10; j >= i; j = j - 1) {
+        //         document.write("*");
+        //     }
+
+        //     document.write("<br>");
+        // }
+
+        for (let i = 1; i < 11; i++) {
+            for (let k = 1; k <= i -1; k++) {
+                document.write('&nbsp;');
+            }
+            for (let j = 10; j >= i; j--) {
+                document.write('*');
+            }
+            document.write('<br>');
+        }
+        // 문20	반복문 - 별찍기
+
+        /*
+        
+        **********
+         *********
+          ********
+           *******
+            ******
+             *****
+              ****
+               ***
+                **
+                 *
+        
+        이런 모양 나오게
+        
+        */
+
+        // for(var i=1; i<=10; i=i+1){
+
+        // for(var k=1; k <= i - 1; k=k+1){
+        //     document.write("&nbsp;")
+        // }  
+
+        // for(var j=10; j>=i; j=j-1){
+        //     document.write("*");
+        // }
+        // document.write("<br>");
+        // }
+    </script>
+</body>
+
+</html>

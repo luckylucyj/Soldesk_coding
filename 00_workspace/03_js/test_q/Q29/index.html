@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let game = prompt("가위~바위~보!!");
+
+        let r = Math.floor(Math.random() * 3) + 1;
+
+        let comp = ["가위", "바위", "보"];
+        let win = 0;
+        let cwin= 0;
+
+        if (comp[r] === "가위") {
+            if (game === "바위") {
+                alert('사용자가 이겼습니다');
+                win=win+1;
+            }else if(game === "보"){
+                alert('컴퓨터가 이겼습니다');
+                cwin=cwin+1;
+            }else if(game === "가위"){
+                alert('서로 비겼습니다');
+                win=0;
+                cwin=0;
+            }
+        }if (comp[r] === "바위") {
+            if (game === "보") {
+                alert('사용자가 이겼습니다');
+                win=win+1;
+            }else if(game === "가위"){
+                alert('컴퓨터가 이겼습니다');
+                cwin=cwin+1;
+            }else if(game === "바위"){
+                alert('서로 비겼습니다');
+                win=0;
+                cwin=0;
+            }
+        }if (comp[r] === "보") {
+            if (game === "가위") {
+                alert('사용자가 이겼습니다');
+                win=win+1;
+            }else if(game === "바위"){
+                alert('컴퓨터가 이겼습니다');
+                cwin=cwin+1;
+            }else if(game === "보"){
+                alert('서로 비겼습니다');
+                win=0;
+                cwin=0;
+            }
+        }
+        document.write(`사용자가 이긴 횟수=${win}:컴퓨터가 이긴 횟수=${cwin}`)
+    </script>
+</body>
+
+</html>

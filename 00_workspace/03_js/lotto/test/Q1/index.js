@@ -20,6 +20,3 @@ if(v1==random1){
   win=win+1;
 }
 
-while(random2==){
-
-}

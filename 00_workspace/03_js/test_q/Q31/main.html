@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../common.js"></script>
+</head>
+
+<body>
+    <input type="textarea" id="textbox">
+    <!-- <button onClick="create()"></button> -->
+    <button onClick="create()">만들어</button>
+    <script src="../main1.js"></script>
+    <script>
+ 
+        let textarea;
+        function create() {
+           textarea = document.createElement('textarea');
+            document.body.appendChild(textarea);
+            textarea.value = winDrawLose;
+        }  
+        document.write(typeof winDrawLose);
+        // create();
+
+        textarea.addEventListener("DOMContentLoaded", function () {
+            create();
+        });
+
+
+        // let textbox = document.querySelector('#textbox');
+        // textbox.innerText = winDrawLose;
+        // switch (winDrawLose) {
+        //     case "승리":
+        //         textarea.innerText = "승리";
+        //         break;
+        //     case "패배":
+        //         textarea.innerText = "승리";
+        //         break;
+        //     case "Draw", "DW":
+        //         textarea.innerText = "승리";
+        //         break;
+        // }
+
+
+        // let t=document.getElementById('textbox');
+        // t.innerText=winDrawLose;
+    </script>
+</body>
+
+</html>

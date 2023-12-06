@@ -9,26 +9,37 @@
 </head>
 
 <body>
-    <input type="textarea" id="textbox">
+    <input type="text" id="textbox" value="">
     <!-- <button onClick="create()"></button> -->
     <button onClick="create()">만들어</button>
     <script src="../main1.js"></script>
     <script>
- 
-        let textarea;
-        function create() {
-           textarea = document.createElement('textarea');
-            document.body.appendChild(textarea);
-            textarea.value = winDrawLose;
-        }  
-        document.write(typeof winDrawLose);
-        // create();
 
-        textarea.addEventListener("DOMContentLoaded", function () {
-            create();
-        });
+        // let textarea;
+        // function create() {
+        //    textarea = document.createElement('textarea');
+        //     document.body.appendChild(textarea);
+        //     textarea.value = winDrawLose;
+        // }  
+        // document.write(typeof winDrawLose);
+        // // create();
 
+        // textarea.addEventListener("click", function () {
+        //     create();
+        // });
 
+        let input = document.getElementById('textbox');
+        function test(){
+                input.value=winDrawLose;
+
+            }
+            test();
+        // function test() {
+
+        //     input.value = winDrawLose;
+        // }
+        // document.write(input.value);
+        // input.addEventListener('click', test());
         // let textbox = document.querySelector('#textbox');
         // textbox.innerText = winDrawLose;
         // switch (winDrawLose) {

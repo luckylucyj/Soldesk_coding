@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var p1 = 23;
+        var p2 = 12;
+        var p3 = 4;
+        var p4 = 85;
+        var p5 = 34;
+        var p6 = 47;
+
+
+        let a = [p1, p2, p3, p4, p5, p6];
+        document.write(a);
+        document.write('<hr>');
+
+        let pArray1 = [0, 0, 0, 0, 0, 0];
+        pArray1[0] = 23;
+        pArray1[1] = 12;
+        pArray1[2] = 4;
+        pArray1[3] = 85;
+        pArray1[4] = 34;
+        pArray1[5] = 47;
+        document.write(pArray1);
+        document.write('<hr>');
+
+        var r1 = Math.floor(Math.random() * 45) + 1;
+        while (true) {
+            var r2 = Math.floor(Math.random() * 45) + 1;
+            if (r2 != r1) {
+                break;
+            }
+        }
+
+
+
+        while (true) {
+            var r3 = Math.floor(Math.random() * 45) + 1;
+            if (r3 != r1 && r3 != r2) {
+                break;
+            }
+        }
+
+        while (true) {
+            var r4 = Math.floor(Math.random() * 45) + 1;
+            if (r4 != r1 && r4 != r2 && r4 != r3) {
+                break;
+            }
+        }
+        while (true) {
+            var r5 = Math.floor(Math.random() * 45) + 1;
+            if (r5 != r1 && r5 != r2 && r5 != r3 && r5 != r4) {
+                break;
+            }
+        }
+
+        while (true) {
+            var r6 = Math.floor(Math.random() * 45) + 1;
+            if (r6 != r1 && r6 != r2 && r6 != r3 && r6 != r4 && r6 != r5) {
+                break;
+            }
+        }
+        while(true){
+            var bonus = Math.floor(Math.random()*45)+1;
+            if(bonus != r1 && bonus != r2 && bonus != r3 && bonus != r4 && bonus != r5 && bonus != r6){
+                break;
+            }
+        }
+
+
+        var b = [r1, r2, r3, r4, r5, r6];
+        document.write(r6);
+        document.write('<br>');
+        document.write(b);
+        document.write('<br>');
+
+        // a=[r1,r2,r3,r4,r5,bonus];
+
+        var luck = 0;
+        for(let i=0; i<=5; i++){
+            for(let j=0; j<=5; j++){
+                if(a[i]==b[j]){
+                    luck+=1;
+                }
+            }
+        }
+
+
+        document.write(luck);
+        document.write('<br>');
+        switch (luck) {
+            case 0:
+            case 1:
+            case 2:
+                document.write('꽝입니다');
+                break;
+            case 3:
+                document.write('5등입니다');
+                break;
+            case 4:
+                document.write('4등입니다');  
+                break;
+            case 5:
+                document.write('3등입니다');
+
+                // if(bonus==a[6]){
+                //     document.write('2등입니다')
+                // }
+                for(let k=0; k<=5; k++){
+                    if(bonus==a[k]){
+                        document.write('2등입니다');
+                    }
+                }
+                break;
+            case 6:
+                document.write('1등 입니다');
+                break;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Cat() {
+            this.name = "";
+            this.age = 0;
+            this.weight = 0;
+
+            this.crying = function () {
+                document.write('야옹');
+            }
+        }
+
+        var kitty = new Cat();
+        kitty.name = "야옹이";
+        kitty.age = 7;
+        kitty.weight = 100;
+        kitty.family = "페르시아";
+        kitty.color = "삼색이";
+
+        document.write(kitty.name);
+        document.write(kitty.age);
+        document.write(kitty.weight);
+
+        var yaongi = new Cat();
+        // 속성 값들도 임의로 전부 주시고	
+        yaongi.name = "보리";
+        yaongi.age = 3;
+        yaongi.weight = 10;
+        yaongi.family = "시고르자브종";
+        yaongi.color = "흰색";
+
+        if(kitty.age>yaongi.age){
+            document.write('형님 고양이: 야옹이');
+        }else if(kitty.age<yaongi.age){
+            document.write('동생 고양이: 키티');
+        }else if(yaongi.age=kitty.age){
+            document.write('둘은 친구임');
+        };
+
+        kitty.crying();
+        yaongi.crying();
+    </script>
+</body>
+
+</html>

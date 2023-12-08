@@ -4,10 +4,13 @@
 function dw(str){    // var str; var str = "고양이";
     document.write(str);
 }
+
 function br(){
     document.write("<br>");
 }
 
-function hr(){
-    document.write('<hr>');
-}
+
+// dw("유저:"+userRpc);
+// br();
+// dw("컴:"+comRpc);
+// br();

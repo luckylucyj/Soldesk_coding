@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Monster(name, hp, attack){
+            this.name=name;
+            this.hp=hp;
+            this.attack=attack;
+            this.info=function(){
+                document.write(name+hp+attack);
+            }
+        }
+        let orc=new Monster('오크전사',100,10);
+        orc.info();
+
+        function Character(name, hp, attack){
+            this.name=name;
+            this.hp=hp;
+            this.attack=attack;
+            this.info=function(){
+                document.write(name, hp, attack);
+            }
+        }
+
+        let elf=new Character('알리오',200,40);
+        elf.info();
+    </script>
+</body>
+
+</html>

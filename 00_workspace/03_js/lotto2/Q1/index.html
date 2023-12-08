@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let r1 = Math.floor(Math.random() * 45) + 1;
+
+        let r2;
+        while (true) {
+            r2 = Math.floor(Math.random() * 45) + 1;
+            if (r2 != r1) {
+                break;
+            }
+        }
+
+        let r3;
+        while (true) {
+            r3 = Math.floor(Math.random() * 45) + 1;
+            if (r3 != r1 && r3 != r2) {
+                break;
+            }
+        }
+
+        let r4;
+        while (true) {
+            r4 = Math.floor(Math.random() * 45) + 1;
+            if (r4 != r1 && r4 != r2 && r4 != r3) {
+                break;
+            }
+        }
+
+        let r5;
+        while (true) {
+            r5 = Math.floor(Math.random() * 45) + 1;
+            if (r5 != r1 && r5 != r2 && r5 != r3 && r5 != r4) {
+                break;
+            }
+        }
+
+        let r6;
+        while (true) {
+            r6 = Math.floor(Math.random() * 45) + 1;
+            if (r6 != r1 && r6 != r2 && r6 != r3 && r6 != r4 && r6 != r5) {
+                break;
+            }
+        }
+
+        let rArray = [r1, r2, r3, r4, r5, r6];
+        document.write(rArray);
+        document.write('<br>');
+        // 여기까지가 랜덤 번호 뽑아내는 기능
+
+        let p1 = Math.floor(Math.random() * 45) + 1;
+
+        let p2;
+        while (true) {
+            p2 = Math.floor(Math.random() * 45) + 1;
+            if (p2 != p1) {
+                break;
+            }
+        }
+
+        let p3;
+        while (true) {
+            p3 = Math.floor(Math.random() * 45) + 1;
+            if (p3 != p1 && p3 != p2) {
+                break;
+            }
+        }
+
+        let p4;
+        while (true) {
+            p4 = Math.floor(Math.random() * 45) + 1;
+            if (p4 != p1 && p4 != p2 && p4 != p3) {
+                break;
+            }
+        }
+
+        let p5;
+        while (true) {
+            p5 = Math.floor(Math.random() * 45) + 1;
+            if (p5 != p1 && p5 != p2 && p5 != p3 && r5 != p4) {
+                break;
+            }
+        }
+
+        let p6;
+        while (true) {
+            p6 = Math.floor(Math.random() * 45) + 1;
+            if (p6 != p1 && p6 != p2 && p6 != p3 && p6 != p4 && p6 != p5) {
+                break;
+            }
+        }
+
+        let bonus;
+        while (true) {
+            bonus = Math.floor(Math.random() * 45) + 1;
+            if (bonus != r1 && bonus != r2 && bonus != r3 && bonus != r4 && bonus != r5 && bonus != r6) {
+                break;
+            }
+        }
+
+        let pArray = [p1, p2, p3, p4, p5, p6];
+        document.write(pArray);
+        //사용자의 번호도 랜덤으로 뽑아주는 기능
+
+        let win = 0;
+        for (let i = 0; i <= 5; i++) {
+            for (let j = 0; j <= 5; j++) {
+                if (pArray[i] == rArray[j]) {
+                    win += 1;
+                }
+            }
+        }
+        //각 컴퓨터가 뽑는 랜덤 값과 사용자의 랜덤 값을 비교하여 같은 값을 뽑는 기능
+
+        document.write('<br>');
+        document.write('당첨횟수:'+win);
+
+        document.write('<br>');
+        document.write('보너스번호:'+bonus);
+
+        document.write('<br>');
+
+        switch (win) {
+            case 0:
+            case 1:
+            case 2:
+                document.write('꽝입니다.');
+                break;
+
+            case 3:
+                document.write('5등입니다.');
+                break;
+
+            case 4:
+                document.write('4등입니다.');
+                break;
+
+            case 5:
+                document.write('3등입니다.');
+                for(let i=0; i<=5; i++){
+                    if(bonus==pArray[i]){
+                        document.write('2등입니다')
+                    }
+                }
+                    //보너스 번호가 사용자가 랜덤으로 뽑은 점수와 같을 때
+                
+                break;
+                
+            case 6:
+                document.write('1등입니다.');
+                break;
+        }
+
+    </script>
+</body>
+
+</html>

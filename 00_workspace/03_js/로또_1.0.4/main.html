@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="common.js"> </script>
+    <script src="main.js"> </script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+
+    <div id="all">
+        <div id="m">
+            <input id="rpc_input_button" type="button" value="로또 추첨" onclick="rpcInputButtonClick()">
+            <div id="checkbox">
+                자동
+                <input id="rpc_input_checkbox" type="checkbox" value="체크박스" onchange="check()">
+            </div>
+        </div>
+        <br>
+        <div id="texts">
+            <input id="mytext_box0" type="text" placeholder="내 번호 적기">
+            <input id="mytext_box1" type="text" placeholder="내 번호 적기">
+            <input id="mytext_box2" type="text" placeholder="내 번호 적기">
+            <input id="mytext_box3" type="text" placeholder="내 번호 적기">
+            <input id="mytext_box4" type="text" placeholder="내 번호 적기">
+            <input id="mytext_box5" type="text" placeholder="내 번호 적기">
+        </div>
+        <br>
+        <div id="n">
+            <textarea id="rpc_input_text_r0" placeholder="1번"></textarea>
+            <textarea id="rpc_input_text_r1" placeholder="2번"></textarea>
+            <textarea id="rpc_input_text_r2" placeholder="3번"></textarea>
+            <textarea id="rpc_input_text_r3" placeholder="4번"></textarea>
+            <textarea id="rpc_input_text_r4" placeholder="5번"></textarea>
+            <textarea id="rpc_input_text_r5" placeholder="6번"></textarea>
+            <textarea id="rpc_input_text_r6" placeholder="7번"></textarea>
+        </div>
+        <div id = "bot">
+            <div id="banner">
+                <div id="close" onclick="closeBox()">
+                </div>
+            </div>
+            <textarea id="my"></textarea>
+        </div>
+    </div>
+
+</body>
+
+</html>

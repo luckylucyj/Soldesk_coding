@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div>
+        <img src="https://www.wfla.com/wp-content/uploads/sites/71/2023/05/GettyImages-1389862392.jpg?w=2560&h=1440&crop=1" alt="고양이">
+        <button onClick="c()">button</button>
+    </div>
+    <script>
+        let img=document.querySelector('img');
+        function c(){
+            img.classList.toggle('show');
+            console.log('click');
+        }
+
+    </script>
+</body>
+</html>

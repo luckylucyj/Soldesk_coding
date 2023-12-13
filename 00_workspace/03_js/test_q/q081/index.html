@@ -8,10 +8,22 @@
     <link rel="stylesheet" href="index.css">
     <script src="common.js"></script>
     <script src="index.js"></script>
+    <style>
+        * {
+            background-color: cornflowerblue;
+            font-size: 20px;
+        }
+
+        #clock {
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="content">
+    <div id="content id">
         <div id="login_box">
             <input id="i" placeholder="아이디">
             <br><br>
@@ -21,6 +33,67 @@
             <a href="reg_member.html"><input id="btn" type="button" value="회원가입"></a>
         </div>
     </div>
+    <div id="clock"></div>
+    <div id="a"></div>
+    <script>
+        let now = new Date();
+        // document.write(now.toLocaleTimeString());
+        // function br() {
+        //     document.write('<br>');
+        // }
+        // // document.write('<br>');
+        // br();
+        // document.write(year);
+        // br();
+        // getMonth
+        // getDate
+
+        let clock;
+
+        let year = String(now.getFullYear());
+        let month = String(now.getMonth());
+        let date = String(now.getDate());
+        let hour = String(now.getHours());
+        let minute = String(now.getMinutes());
+        let second = String(now.getSeconds());
+        let milli = String(now.getMilliseconds());
+        let total_time = year + "년 " + month + "월 " + date + "일 " + hour + "시 " + minute + "분 " + second + "초 " + milli + "밀리초";
+        // let sec=10;
+        // let divA;
+        let sec=10;
+        let divA;
+
+        function x() {
+
+            // let result = document.write(total_time);
+
+            // for (let i = 10; x.length; i--) {
+            //     if (x[i] == 0) {
+            //         clock.innerHTML = total_time;
+            //         console.log('true');
+            //     } else{alert('불꺼');}
+            // }
+            
+            sec-=1;
+            clock.innerHTML=total_time;
+            if(sec<=0){
+                divA.innerHTML='불 꺼';
+            }else{
+                divA.innerHTML=sec;
+            }
+        }
+
+        // clock = document.getElementById('clock');
+
+        // divA=document.getElementById('a');
+        //     setInterval(x, 1000);
+        document.write('<br>');
+        window.onload = function () {
+            clock = document.getElementById('clock');
+            divA=document.getElementById('a');
+            setInterval(x, 1000);
+        }
+    </script>
 </body>
 
 </html>

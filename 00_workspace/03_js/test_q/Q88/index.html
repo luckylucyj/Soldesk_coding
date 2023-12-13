@@ -11,7 +11,7 @@
             font-size: 20px;
         }
 
-        .clock {
+        #clock {
             width: 300px;
             height: 100px;
             background-color: pink;
@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <div class="clock"></div>
+    <div id="clock"></div>
     <script>
         let now = new Date();
         document.write(now.toLocaleTimeString());
@@ -41,17 +41,23 @@
         let second = String(now.getSeconds());
         let milli = String(now.getMilliseconds());
         let total_time = year + "년 " + month + "월 " + date + "일 " + hour + "시 " + minute + "분 " + second + "초 " + milli + "밀리초";
-        document.write(total_time);
+        let result=document.write(total_time);
 
-        let clock=function(){
-            
+        window.onload=function(){
+            let clock=document.getElementById('clock');
+            setInterval(time,1000);
         }
+        
+        function time(){
+            
+            clock.innerHTML=result;
+}
         // var clock;
 
-window.onload = function(){
-    clock=document.getElementById("clock");
-    setInterval(x, 1000);  // 타이머 시작
-}
+// window.onload = function(){
+//     clock=document.getElementById("clock");
+//     setInterval(x, 1000);  // 타이머 시작
+// }
 
 // ㅇㅇㅇㅇ년 ㅇㅇ월 ㅇㅇ일 ㅇㅇ시 ㅇㅇ분 ㅇㅇ초 ㅇㅇㅇ 밀리초
 
